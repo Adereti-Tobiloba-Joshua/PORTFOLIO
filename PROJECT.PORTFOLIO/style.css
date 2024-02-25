@@ -651,6 +651,10 @@ section {
   }
   .skills-range {
     width: 100%;
+    padding-bottom: 50px;
+  }
+  .contact-details{
+    margin-top: 50px;
   }
   .contact-details p{
     margin-left: 90px;
