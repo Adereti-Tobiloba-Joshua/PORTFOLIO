@@ -85,12 +85,14 @@ html {
   padding: 0, 80px;
   margin: auto;
   display: flex;
+  justify-content: space-between;
 }
 .mypic img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   background-color: black;
+  text-align: center;
 }
 /* END OF NAVBAR SECTION */
 
@@ -107,8 +109,7 @@ html {
   background-size: cover;
 }
 .home .nav-title {
-  margin: auto 0 auto 40px;
-  gap: 21rem;
+  gap: 100px;
   position: static;
 }
 .home-content {
@@ -128,6 +129,9 @@ html {
 .home a:hover {
   color: #4caf4f;
   background: none;
+}
+.introduction{
+  margin-bottom: 10px;
 }
 .introduction span {
   font-size: 30px;
@@ -511,6 +515,7 @@ section {
   }
   .home-content {
     padding-top: 0;
+    text-align: center;
   }
   .home {
     height: 700px;
@@ -519,7 +524,7 @@ section {
     margin-top: 20px;
     padding-top: 100px;
     margin-left: 100px;
-    padding-left: 15px;
+    padding-left: 45px;
     flex-direction: column;
     align-items: center;
     margin-right: 0;
@@ -597,7 +602,10 @@ section {
     padding-left: 10px;
   }
   .home-content {
-    padding-top: 0;
+    padding-top: 10;
+  }
+  .home-content span{
+    font-size: 25px;
   }
   .home {
     height: 650px;

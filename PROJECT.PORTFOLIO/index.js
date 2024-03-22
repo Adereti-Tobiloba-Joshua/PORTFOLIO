@@ -5,7 +5,8 @@ let menuButton = document.querySelector('.menu-btn')
 const home = document.querySelector('.home-content')
 const title = document.querySelector('.nav-title')
 const phoneMenu = document.querySelector('.phone-menu')
-
+const text = [ 'Frontend Website Developer', 'Graphic Designer']
+let index = 0;
 
 window.addEventListener('scroll', function(){
     const scrollPosition = window.scrollY;
@@ -19,19 +20,12 @@ window.addEventListener('scroll', function(){
     }
 })
 
+function changeText () {
+    document.getElementById('change').textContent = text[index];
+    index = (index + 1) % text.length;
+}
+setInterval(changeText, 2000);
 
-// button.addEventListener('click' , (toggleTasks) => {
-//     let clickCount = 0;
-//     button ++;
-//     if (clickCount % 2 === 1) {
-       
-//         menu.style.display = 'flex'
-//     } else {
-//         // Even click
-//         menu.style.display = 'none'
-//     }
-   
-// })
 let clickCount = 0;
 function toggleTasks() {
     clickCount++;
